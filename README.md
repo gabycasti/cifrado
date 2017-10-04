@@ -18,5 +18,5 @@ alert(str);
 
 
 
-![Texto alternativo](micomo.grupojega.com/imagenes/fondo_sup.png "Título de la imagen").
+![Diagrama de Flujo](diagrama.png) "Título de la imagen").
 # cifrado
