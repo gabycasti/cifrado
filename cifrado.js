@@ -14,22 +14,19 @@ function principal () {
 				alert("Ingrese una opción válida");
 			}
 		}
-	} while (resp == "" || (resp != "1" && resp != "2"));
-//}
-      
-
+	} while (resp == "" || (resp != "1" && resp != "2")); // Salir del ciclo si la respuesta es igual a vacio o diferente a 1 o 2
 
 
 function cipher(palabra){
 	var result = "";
 	var cod = 0;
     
-    palabra = palabra.toUpperCase();
+    palabra = palabra.toUpperCase(); // Convierto la palabra en mayuscula
     
 	for (i=0; i<palabra.length;i++){
 		cod = palabra.charCodeAt(i); // Luego de recorrer la palabra le aplico la función charCodeAt la misma pide un indice por eso se le coloca i
 		cod = ((cod-65+33)%26)+65; // aplico la formula para obtener el código ascii
-		result+=String.fromCharCode(cod); 
+		result+=String.fromCharCode(cod);  // Devuelvo la cadena
 	}
 
 	alert(result);
@@ -45,7 +42,7 @@ function decipher(palabra){
    
 	for (i=0; i<palabra.length;i++){ 
 		cod = palabra.charCodeAt(i); //método devuelve un número indicando el valor Unicode del carácter en el índice proporcionado.
-		cod = ((cod-65-7+26)%26)+65;
+		cod = ((cod-65-7+26)%26)+65; // Formula para Desencriptar
 		result+= String.fromCharCode(cod); // me devuelve una cadena creada mediante el uso de una secuencia de valores Unicode especificada.
                                            // Sintaxis
 
